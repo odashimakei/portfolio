@@ -1,22 +1,11 @@
-# portfolio
-Kei odashimaの自己紹介ページかつ、遊ぶかつ、練習場所。
+# STATIC
 
-# Dependency
-HTML, CSS, JS
+**This directory is not required, you can delete it if you don't want to use it.**
 
-# 自分用備忘録
-ローカルでブランチを作成
-$ git branch <ブランチ名>
-ローカルでブランチを切り替え
-$ git checkout <ブランチ名>
-ブランチ作成 & 切り替え
-$ git branch -b <ブランチ名>
-ローカルの変更を確認する
-$ git status
-commitの変更履歴をみる
-$ git log
-リモートにプッシュ
-$ git push origin <ブランチ名>
+This directory contains your static files.
+Each file inside this directory is mapped to `/`.
+Thus you'd want to delete this README.md before deploying to production.
 
-# Authors
-Kei Odashima.
+Example: `/static/robots.txt` is mapped as `/robots.txt`.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/assets#static).
