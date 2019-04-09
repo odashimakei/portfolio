@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 710px) {
 
 /* Common Parts */
 body{
@@ -96,6 +96,13 @@ a:hover{
   margin-bottom: 6px;
   margin-left: 8px;
   font-size: 14px;
+}
+.nextTime__dateTime{
+  font-size: 14px;
+  display: flex;
+  margin-bottom: 6px;
+  padding: 0 8px;
+  align-items: flex-end;
 }
 .nextTime__place{
   font-weight: bold;

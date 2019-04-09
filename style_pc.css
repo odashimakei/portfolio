@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 710px) {
 
   /* Common Parts */
 body{
@@ -76,12 +76,12 @@ a:hover{
   color: #CCC;
   margin: -2px 2px 0 4px;
 }
-.nextTime__dataWeek{
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 6px;
-  margin-left: 8px;
+.nextTime__dateTime{
   font-size: 14px;
+  display: flex;
+  margin-bottom: 6px;
+  padding: 0 8px;
+  align-items: flex-end;
 }
 .nextTime__place{
   font-weight: bold;
