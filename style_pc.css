@@ -116,8 +116,9 @@ a:hover{
 }
 
 .small{
-  font-size: 22px;
-  margin: 0 8px;
+  font-size: 14px;
+  /* font-weight: normal; */
+  margin: 0;
 }
 
 /* curriculum */
