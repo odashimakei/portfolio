@@ -1,131 +1,35 @@
-<!DOCTYPE html>
-  <html lang=jp>
-    <head>
-    <meta charset=utf-8>
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=viewport content="width=device-width,initial-scale=1">
-    <link rel=icon href=/favicon.ico>
-    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css>
-    <title>WebDesign</title>
-    <link href=style_sp.css rel=stylesheet>
-    <link href=style_pc.css rel=stylesheet>
+<!doctype html>
+<html data-n-head-ssr data-n-head="">
+  <head data-n-head="">
+    <title data-n-head="true">portfolio</title><meta data-n-head="true" charset="utf-8"><meta data-n-head="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-n-head="true" data-hid="description" name="description" content="My first-rate Nuxt.js project"><link data-n-head="true" rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" href="/_nuxt/de0f39c062c25a79591d.js" as="script"><link rel="preload" href="/_nuxt/6729f1f524caee68baae.js" as="script"><link rel="preload" href="/_nuxt/88d9b1abb1547bef346f.js" as="script"><link rel="preload" href="/_nuxt/fdd0959fb174ce7b4a67.js" as="script"><style data-vue-ssr-id="17cfdfa9:0 aab9a468:0 36873827:0 36873827:1">.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#fff;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}html{font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;font-size:16px;word-spacing:1px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;box-sizing:border-box}*,:after,:before{box-sizing:border-box;margin:0}.button--green{display:inline-block;border-radius:4px;border:1px solid #3b8070;color:#3b8070;text-decoration:none;padding:10px 30px}.button--green:hover{color:#fff;background-color:#3b8070}.button--grey{display:inline-block;border-radius:4px;border:1px solid #35495e;color:#35495e;text-decoration:none;padding:10px 30px;margin-left:15px}.button--grey:hover{color:#fff;background-color:#35495e}body{font-family:ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,ＭＳ Ｐゴシック,sans-serif,Roboto}.container{margin:0 auto;height:980px;text-align:center}h2{font-size:20px;color:#4a4a4a;font-weight:900;margin:40px auto 0;width:724px;padding-left:64px;border-bottom:1px solid #d8d8d8;text-align:left;box-sizing:border-box}#other,#works{display:flex;width:100%;justify-content:center;flex-direction:column}.workItem{display:flex;justify-content:flex-start;margin:40px auto;max-width:800px}.workItem__num{font-size:40px;color:#4a4a4a;font-weight:700;padding-left:120px}.workItem__thumb{min-width:248px;max-height:160px;height:100%;overflow:hidden}.workItem__wrap{margin:0 40px;width:600px;height:160px;display:flex}.workItem__wrap:hover{box-shadow:0 0 6px 0 rgba(0,0,0,.2)}.workItem__link{color:#666;width:100%;margin:0;display:flex}.workItem__detail{display:flex;flex-direction:column;text-align:left}.workItem__title{margin:16px 24px 8px;font-size:16px;font-weight:700}.workItem__tag{margin:0 24px;padding:2px;font-size:12px;font-weight:700;color:#999}.workItem__subtext{margin:8px 24px;font-size:12px}.title{font-family:Roboto,sans-serif;display:block;text-align:left;margin:40px;line-height:.9;font-weight:900;font-size:40px;color:#35495e;letter-spacing:1px}.title:after{display:block;content:"";background:#d8d8d8;height:4px;width:304px;margin-top:-4px;margin-left:-40px}a{text-decoration:none}</style>
   </head>
-  <body>
-    <div class="wrap">
-      <!-- Global Header -->
-      <header class="globalHeader">
-        <h1 class="logo">
-          <a href="">Web Designer Academy</a>
-        </h1>
-        <!-- <nav class="globalNavi">
-          <ul class="globalNavi__list">
-            <li class="globalNavi__item"><a class="globalNavi__link" href="">About</a></li>
-            <li class="globalNavi__item"><a class="globalNavi__link" href="">Curriculum</a></li>
-            <li class="globalNavi__item"><a class="globalNavi__link" href="">Archive</a></li>
-          </ul>
-        </nav> -->
-      </header>
-      <!-- Global Header -->
-
-      <section class="nextTime">
-        <header class="nextTime__head">
-          <div class="nextTime__data">
-            <p class="nextTime__dataWrap">
-              6<span class="nextTime__dataSlash">/</span>14
-              <time class="nextTime__dateTime">- 18:30</time>
-            </p>
-            <p class="nextTime__place">
-              @<a href="https://goo.gl/maps/csQak3vPqb92" target="_blank">エクセルシオールカフェ 水道橋西口店</a>
-            </p>
-          </div>
-          <!-- <span class="nextTime__label">次回予告</span> -->
-        </header>
-
-        <h2 class="nextTime__title">
-            ビジュアルデザインのプロセス（中編）
-        </h2>
-
-        <main class="nextTime__body">
-          <div class="nextTime__item">
-            <h3 class="nextTime__subTitle">アジェンダ</h3>
-            <ol class="nextTime__ol">
-              <li>イラスト・InfoGraphic・Motion</li>
-              <li>映像</li>
-            </ol>
-          </div>
-          <div class="nextTime__item">
-            <h3 class="nextTime__subTitle">持ち物</h3>
-            <ul class="nextTime__ol">
-              <li>PC</li>
-            </ul>
-          </div>
-        </main>
-      </section>
-      <!-- /NextTime -->
-
-      <section class="curriculum">
-        <h2 class="curriculum__title">UI講義一覧</h2>
-
-        <div class="curriculum__wrap">
-          <div class="curriculum__item">
-            <h3 class="curriculum__subTitle">Information Design</h3>
-            <ul class="curriculum__list">
-              <li>Web基礎知識<a class="curriculum__link" href="./data/id_01.pdf" target="_blank"><img class="curriculum__icon" src="./assets/baseline-attachment-24px.svg" alt="attachment"></a></li>
-              <li>定量調査と定性調査<a class="curriculum__link" href="./data/id_02.pdf" target="_blank"><img class="curriculum__icon" src="./assets/baseline-attachment-24px.svg" alt="attachment"></a></li>
-              <li>ペルソナ法<a class="curriculum__link" href="./data/id_03.pdf" target="_blank"><img class="curriculum__icon" src="./assets/baseline-attachment-24px.svg" alt="attachment"></a></li>
-              <li>カスタマージャーニーマップ<a class="curriculum__link" href="./data/id_04.pdf" target="_blank"><img class="curriculum__icon" src="./assets/baseline-attachment-24px.svg" alt="attachment"></a></li>
-              <li>ユーザビリティ・アクセシビリティ<a class="curriculum__link" href="./data/id_05.pdf" target="_blank"><img class="curriculum__icon" src="./assets/baseline-attachment-24px.svg" alt="attachment"></a></li>
-              <li>情報設計<a class="curriculum__link" href="./data/id_06.pdf" target="_blank"><img class="curriculum__icon" src="./assets/baseline-attachment-24px.svg" alt="attachment"></a></li>
-              <li>UI提案<a class="curriculum__link" href="./data/id_07.pdf" target="_blank"><img class="curriculum__icon" src="./assets/baseline-attachment-24px.svg" alt="attachment"></a></li>
-              <li>アプリUI<a class="curriculum__link" href="./data/id_08.pdf" target="_blank"><img class="curriculum__icon" src="./assets/baseline-attachment-24px.svg" alt="attachment"></a></li>
-              <li>プロトタイピング<a class="curriculum__link" href="./data/id_09.pdf" target="_blank"><img class="curriculum__icon" src="./assets/baseline-attachment-24px.svg" alt="attachment"></a></li>
-              <li>UI仕様書<a class="curriculum__link" href="./data/id_10.pdf" target="_blank"><img class="curriculum__icon" src="./assets/baseline-attachment-24px.svg" alt="attachment"></a></li>
-            </ul>
-          </div>
-
-          <div class="curriculum__item">
-            <h3 class="curriculum__subTitle">Visual Design</h3>
-            <ul class="curriculum__list">
-                <li>Visual Identity<a class="curriculum__link" href="./data/vd_01.pdf" target="_blank"><img class="curriculum__icon" src="./assets/baseline-attachment-24px.svg" alt="attachment"></a></li>
-                <li>VD要件定義<a class="curriculum__link" href="./data/vd_02.pdf" target="_blank"><img class="curriculum__icon" src="./assets/baseline-attachment-24px.svg" alt="attachment"></a></li>
-                <li>ビジュアルリサーチ<a class="curriculum__link" href="./data/vd_03.pdf" target="_blank"><img class="curriculum__icon" src="./assets/baseline-attachment-24px.svg" alt="attachment"></a></li>
-                <li>ビジュアルコンセプト<a class="curriculum__link" href="./data/vd_04.pdf" target="_blank"><img class="curriculum__icon" src="./assets/baseline-attachment-24px.svg" alt="attachment"></a></li>
-                <li>色彩設計<a class="curriculum__link" href="./data/vd_05.pdf" target="_blank"><img class="curriculum__icon" src="./assets/baseline-attachment-24px.svg" alt="attachment"></a></li>
-                <li>イラスト・インフォグラフィック・モーション<a class="curriculum__link" href="./data/vd_06.pdf" target="_blank"><img class="curriculum__icon" src="./assets/baseline-attachment-24px.svg" alt="attachment"></a></li>
-              <li>映像</li>
-              <li>タイポグラフィ</li>
-              <li>画像の扱い方</li>
-            </ul>
-          </div>
-
-          <div class="curriculum__item inactive">
-            <h3 class="curriculum__subTitle">Wev Develop</h3>
-            <ul class="curriculum__list">
-              <li>HTML基礎</li>
-              <li>CSS基礎</li>
-              <li>JavaScript基礎</li>
-              <li>開発環境の仕組み</li>
-              <li>デザイナーのためのGitHub</li>
-            </ul>
-          </div>
-      </div>
-      </section>
-
-      <!-- <section class="schedule inactive">
-        <h2 class="schedule__title">スケジュール</h2>
-        <p>これから</p>
-      </section> -->
-
-      <footer class="footer">
-        <ul class="footer__list">
-          <li class="footer__item"><a href="#">Home</a></li>
-          <li class="footer__item"><a href="#">About</a></li>
-          <li class="footer__item"><a href="#">Curriculum</a></li>
-          <li class="footer__item"><a href="#">Archive</a></li>
-          <li class="footer__item"><a href="#">Policy</a></li>
-        </ul>
-        <small>©kei odashima</small>
-      </footer>
-    </div>
+  <body data-n-head="">
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div><section class="container"><h1 class="title">
+    Kei Odashima
+  </h1> <div id="works"><h2>Works</h2> <div class="workItem"><span class="workItem__num">
+          01
+        </span> <div class="workItem__wrap"><a href="./works/01/index.html" class="workItem__link"><img src="./img/2236fa2.png" alt="pricing image" class="workItem__thumb"> <div class="workItem__detail"><span class="workItem__title">
+                Design System
+              </span> <p class="workItem__tag">
+                CORDING / UI-DESIGN
+              </p> <p class="workItem__subtext">
+                本業と副業先でデザインシステムを制作。
+              </p></div></a></div></div><div class="workItem"><span class="workItem__num">
+          02
+        </span> <div class="workItem__wrap"><a href="./works/02/index.html" class="workItem__link"><img src="./img/b4c1735.png" alt="pricing image" class="workItem__thumb"> <div class="workItem__detail"><span class="workItem__title">
+                App UI Design
+              </span> <p class="workItem__tag">
+                CORDING / UI-DESIGN
+              </p> <p class="workItem__subtext">
+                Yahoo! JAPANアプリのコミュニティサービス。2018年末にクローズ済み。
+              </p></div></a></div></div><div class="workItem"><span class="workItem__num">
+          03
+        </span> <div class="workItem__wrap"><a href="./works/03/index.html" class="workItem__link"><img src="./img/51c2305.png" alt="pricing image" class="workItem__thumb"> <div class="workItem__detail"><span class="workItem__title">
+                Weekly UI
+              </span> <p class="workItem__tag">
+                UI-DESIGN
+              </p> <p class="workItem__subtext">
+                週１回、お題をもとにUIデザインする。Daily UI
+              </p></div></a></div></div></div></section></div></div></div><script>window.__NUXT__={layout:"default",data:[{}],error:null,serverRendered:!0}</script><script src="/_nuxt/de0f39c062c25a79591d.js" defer></script><script src="/_nuxt/fdd0959fb174ce7b4a67.js" defer></script><script src="/_nuxt/6729f1f524caee68baae.js" defer></script><script src="/_nuxt/88d9b1abb1547bef346f.js" defer></script>
   </body>
 </html>
