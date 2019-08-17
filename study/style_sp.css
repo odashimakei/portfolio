@@ -19,6 +19,10 @@ a:hover{
   margin: 0 auto;
 }
 
+h2{
+  font-size: 22px;
+}
+
 /* Global Header */
 .globalHeader{
  }
