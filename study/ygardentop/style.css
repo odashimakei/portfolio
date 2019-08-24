@@ -1,0 +1,51 @@
+header{
+    background: #F4EFEA    
+}
+
+div{
+    margin-top: 40px ;
+    margin-bottom：50px ;
+    margin-left：225px ;
+    margin-right：225px ;
+} 
+
+.header-logo{
+    text-align: left;
+}
+
+.header__logo__text{
+    font-size: 15px; 
+    color: #0C577A;
+    font-family: "游明朝体", "Yu Mincho", YuMincho,
+    font-weight 400;    
+}
+
+
+ul {
+    list-style: none;
+  }
+  
+
+.header__sns{
+    text-align: right;
+} 
+
+.header__sns__item{
+    display: flex;
+    justify-content:flex-end 
+    display:grid;
+    grid-column-gap:23px ;   
+}
+
+
+.nav{
+    font-size: 20px; 
+    color: #0C577A;
+    font-family: "游明朝体", "Yu Mincho", YuMincho,
+    font-weight 400;
+}
+
+.header__nav__item{
+    display: flex;
+    flex-direction: row
+}
