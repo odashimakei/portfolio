@@ -1,0 +1,333 @@
+<html lang="ja"><head>
+    <title>内定選手詳細</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="#######">
+    <meta name="keywords" content="#######">
+    <meta property="og:site_name" content="特集">
+    <meta property="og:title" content="特集">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="#">
+    <meta property="og:description" content="#######">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:url" content="#######">
+    <meta property="fb:app_id" content="#######">
+    <link rel="apple-touch-icon" href="#">
+    <link rel="stylesheet" href="./style.css">
+    <script src="../js/sp/common.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,shrink-to-fit=no">
+  </head>
+  <body><script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
+//]]></script><script async="" src="/browser-sync/browser-sync-client.js?v=2.26.7"></script>
+
+    <!--#wrapper-->
+    <div id="wrapper"><header class="header">
+  <div class="header__wrap">
+    <h1 class="header__title">
+      <a href="https://2020.yahoo.co.jp/">東京五輪・パラガイドトップ</a>
+    </h1>
+  </div>
+</header>
+<div>
+  <nav id="globalNavi">
+    <ul class="inner" id="globalNavi-" style="width: 989px; transform: translateX(0px); transition: none 0s ease 0s;">
+      <li id="globalNavi-item-top" class="current"><a href="https://2020.yahoo.co.jp/">トップ</a></li>
+      <li id="globalNavi-item-news"><a href="https://2020.yahoo.co.jp/news/">ニュース</a></li>
+      <li id="globalNavi-item-column"><a href="https://2020.yahoo.co.jp/column/">コラム</a></li>
+      <li id="globalNavi-item-minnano2020"><a href="https://2020.yahoo.co.jp/minnano2020/">企画記事</a></li>
+      <li id="globalNavi-item-video"><a href="https://2020.yahoo.co.jp/video/">動画</a></li>
+      <li id="globalNavi-item-event"><a href="https://2020.yahoo.co.jp/event/olympic/">競技一覧</a></li>
+      <li id="globalNavi-item-schedule"><a href="https://2020.yahoo.co.jp/schedule/olympic/">日程</a></li>
+      <li id="globalNavi-item-player"><a href="https://2020.yahoo.co.jp/player/olympic/">内定選手</a></li>
+      <li id="globalNavi-item-venue"><a href="https://2020.yahoo.co.jp/venue/olympic/">会場</a></li>
+      <li id="globalNavi-item-torch"><a href="https://2020.yahoo.co.jp/torch/">聖火リレー</a></li>
+      <li id="globalNavi-item-special"><a href="https://2020.yahoo.co.jp/special/">スペシャル</a></li>
+      <li id="globalNavi-item-olympicchannel"><a href="https://2020.yahoo.co.jp/olympicchannel/video/">オリンピックチャンネル</a></li>
+    </ul>
+  </nav>
+</div>
+
+<script>
+  var navi = document.getElementById('globalNavi-');
+  for (var i = 0; i < navi.childElementCount; i++){
+    navi.children[i].classList.remove('current');
+  }
+
+  const paths = location.pathname.split('/');
+  const firstPath = paths[1];
+  const naviMap = {
+    'news': 'globalNavi-item-news',
+    'column': 'globalNavi-item-column',
+    'minnano2020': 'globalNavi-item-minnano2020',
+    'video': 'globalNavi-item-video',
+    'event': 'globalNavi-item-event',
+    'schedule': 'globalNavi-item-schedule',
+    'player': 'globalNavi-item-player',
+    'venue': 'globalNavi-item-venue',
+    'torch': 'globalNavi-item-torch',
+    'special': 'globalNavi-item-special',
+    'olympicchannel': 'globalNavi-item-olympicchannel'
+  };
+  const currentId = naviMap[firstPath] || 'globalNavi-item-top';
+  navi.children.namedItem(currentId).classList.add('current');
+</script>
+
+<script type="text/javascript">
+  $("#globalNavi").swipeBox( {
+    inner    : ".inner",
+    current  : ".current"
+  });
+</script>
+
+
+        <!-- header系モジュールはここに -->
+
+      <!--main.content-->
+      <main class="content">
+
+        <!-- main系モジュールはここに -->
+
+      <div id="gameSwitch--9999" class="switch modCommon"><ul class="switch__list"><li class="switch__item"><a href="https://2020.yahoo.co.jp/player/olympic/" class="switch__link">オリンピック内定選手一覧</a></li> </ul> </div>
+
+<script>
+  (function(){
+    if(Vue){
+      var app = new Vue({
+        delimiters: ['${', '}'],
+        el: '#gameSwitch--9999',
+        data: {
+          pathname: location.href
+        },
+        computed: {
+          checkDetail: function (){
+            if (this.pathname.indexOf('/olympic/') >= 0 || this.pathname.indexOf('/paralympic/') >= 0) {
+              if (this.pathname.match("/07") || this.pathname.match("/08") || this.pathname.match("/09")){
+                return true
+              }
+              return false;
+            } else {
+              return true;
+            }
+          },
+          checkGame: function (){
+            if (this.pathname.match(/event/)) {
+              var pattern = this.pathname.slice(30);
+            } else if (this.pathname.match(/schedule/)){
+              var pattern = this.pathname.slice(33);
+            } else if (this.pathname.match(/venue/)){
+              var pattern = this.pathname.slice(30);
+            } else if (this.pathname.match(/player/)){
+              var pattern = this.pathname.slice(31);
+            }
+            if(pattern.indexOf('/p')){
+              return true;
+            } else {
+              return false;
+            }
+          },
+          returnLabel: function () {
+            if (this.pathname.match(/event/)) {
+              return '競技一覧'
+            } else if (this.pathname.match(/schedule/)){
+              return '日程一覧'
+            } else if (this.pathname.match(/venue/)){
+              return '会場一覧'
+            } else if (this.pathname.match(/player/)){
+              return '内定選手一覧'
+            }
+            return ''
+          },
+          showFlag: function () {
+            if (this.pathname.match(/olympic/)) {
+              return false;
+            } else if ( this.pathname.match(/paralympic/) ){
+              return true;
+            };
+          },
+          returnUrl: function () {
+            var url = 'https://2020.yahoo.co.jp/';
+            if ( this.pathname.match(/event/)) {
+              return url + 'event';
+            }
+            if ( this.pathname.match(/schedule/) ) {
+              return url + 'schedule';
+            }
+            if ( this.pathname.match(/player/)) {
+              return url + 'player';
+            }
+            if ( this.pathname.match(/venue/)) {
+              return url + 'venue';
+            }
+          }
+        }
+      })
+    }
+  })();
+</script>
+<div class="sportHead">
+  <div class="sportHead__wrap">
+    <span class="icon icon--wl"></span>
+    <p class="sportHead__title">車いすバスケットボール</p>
+    <a class="sportHead__link" href="https://yahoo.co.jp">選考基準</a>
+  </div>
+</div>
+<div class="searchBox">
+  <div id="pulldown-1234" class="searchBox__pulldown"><select onchange="location.href=value;" class="searchBox__pulldown"><option value="">種目を選ぶ</option> <option value="?genreCode=event-athletics-men-100m">陸上男子100メートル</option>  <option value="?genreCode=event-athletics-men-200m">陸上男子200メートル</option>  <option value="?genreCode=event-athletics-men-400m">陸上男子400メートル</option>  <option value="?genreCode=event-athletics-women-100m">陸上女子100メートル</option>  <option value="?genreCode=event-athletics-women-200m">陸上女子200メートル</option>  <option value="?genreCode=event-athletics-women-400m">陸上女子400メートル</option> </select></div>
+</div>
+
+<script>
+  (function() {
+    if (Vue) {
+      var app = new Vue({
+        delimiters: ["${", "}"],
+        el: "#pulldown-1234",
+        data: {
+          pathName: location.href,
+          parameter: location.search
+        },
+        computed: {
+          resetValue: function(){
+            return this.pathName.substring(0,this.pathName.indexOf("?"))
+          },
+          checkSelected: function() {
+            return function(x) {
+              var param = this.parameter.replace('?' , '').split('&');
+              var id = [];
+
+              for (i = 0; i < param.length; i++) {
+                if(param[i].indexOf('genreCode=') === 0){
+                  id = param[i].replace('genreCode=' , '');
+                }
+              }
+
+              if (x === id){
+                return true;
+              } else {
+                return false;
+              }
+            };
+          }
+        },
+      });
+    }
+  })();
+</script>
+
+<section class="modCommon">
+  <div class="playerList">
+    <ul>
+      <li class="playerList__item">
+        <a href="https://2020.yahoo.co.jp/player/at/detail/yahoo-taro-0001" class="playerList__link">
+          <div class="playerList__thumb">
+            <img src="https://sports-pctr.c.yimg.jp/dk/sports-event/tokyo2020/player/takahashi-takumi-0001.jpg?w=360&amp;h=360" class="playerList__img">
+          </div>
+          <div class="playerList__wrap">
+            <p class="playerList__name">矢風 太郎</p>
+            <span class="playerList__credit">やふう たろう</span>
+            <dl class="playerList__list">
+              <dt class="playerList__title">出身地</dt>
+              <dd class="playerList__text">広島</dd>
+              <dt class="playerList__title">生年月日</dt>
+              <dd class="playerList__text">1992/06/10</dd>
+              <dt class="playerList__title disabled">種目</dt>
+            </dl>
+          </div>
+        </a>
+      </li>
+      <li class="playerList__item">
+        <a href="https://2020.yahoo.co.jp/player/at/detail/yahoo-taro2-0001" class="playerList__link">
+          <div class="playerList__thumb">
+            <img src="https://s.yimg.jp/images/tokyo2020/all/common/noimage500_500.png" class="playerList__img">
+          </div>
+          <div class="playerList__wrap">
+            <p class="playerList__name">サニブラウン　ハキーム</p>
+            <span class="playerList__credit">やふう たろう2</span>
+            <dl class="playerList__list">
+              <dt class="playerList__title">出身地</dt>
+              <dd class="playerList__text">広島</dd>
+              <dt class="playerList__title">生年月日</dt>
+              <dd class="playerList__text">1992/06/10</dd>
+              <dt class="playerList__title ">種目</dt>
+              <dd class="playerList__text">男子走り高跳び</dd>
+              <dd class="playerList__text">男子走り高跳び</dd>
+            </dl>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="modCommon--min">
+  <h1 class="heading heading--01">
+    <p class="heading__title">おすすめ情報</p>
+  </h1>
+
+  <div class="recommend">
+    <ul>
+      <li class="recommend__item recommend__item--img">
+        <a class="recommend__link" href="https://www.yahoo.co.jp/">
+          <img src="https://s.yimg.jp/images/sports/tokyo2020/common/images/banner/athlete/300x80.jpg" alt="未来に輝け日本のアスリートたち">
+        </a>
+      </li>
+      <li class="recommend__item">
+        <a class="recommend__link" href="https://www.yahoo.co.jp/">【IOC オリンピックチャンネル】過去大会のハイライト動画を配信中！</a>
+      </li>
+      <li class="recommend__item">
+        <a class="recommend__link" href="https://www.yahoo.co.jp/">スポーツマネジャーという仕事</a>
+      </li>
+    </ul>
+  </div>
+</section></main><!--/main.content-->
+
+      <!-- footer系モジュールはここに -->
+
+    <footer id="footer">
+  <div class="footer">
+    <div class="footer__content">
+      <div class="footer__content-wrapper">
+        <div>
+
+          <ul class="footer__navMain">
+            <li><a class="footer__link" href="https://2020.yahoo.co.jp/">東京五輪・パラガイドトップ</a></li>
+            <li><a class="footer__link" href="https://www.yahoo.co.jp">Yahoo! JAPAN</a></li>
+          </ul>
+          <ul class="footer__navSub">
+            <li><a class="footer__link" href="https://privacy.yahoo.co.jp/">プライバシー</a></li>
+            <li><a class="footer__link" href="https://about.yahoo.co.jp/docs/info/terms/">規約</a></li>
+            <li><a class="footer__link" href="https://support.yahoo-net.jp/PccSports/s/article/H000011047/">ヘルプ</a></li>
+          </ul>
+        </div>
+        <small class="footer__copyright">写真：アフロ</small>
+          <small class="footer__copyright">(C)2020 IOC, All rights reserved.</small>
+          <small class="footer__copyright">Copyright (C)2020 時事通信社</small>
+        <small class="footer__copyright">(C) Sportsnavi</small>
+        <small class="footer__copyright">(C) Yahoo Japan</small>
+      </div>
+    </div>
+  </div>
+</footer>
+</div><!--/#wrapper-->
+  
+
+  <script src="./_src/jquery.min.js"></script>
+  <script src="./_src/mustache.min.js"></script>
+  <script src="./_src/render.js"></script>
+  <script src="https://s.yimg.jp/images/sports/all_device/sp/js/lib/vue.min.js?t=2019121012"></script>
+  <script src="https://s.yimg.jp/images/sports/all_device/sp/js/lib/jquery.swipeBox-1.0.2.min.js"></script>
+
+  <script>
+    var schemas_head = ["globalNavi", "header"]
+    var schemas_main = ["gameSwitch", "sportHead", "playerList", "recommend"]
+    var schemas_foot = ["footer"]
+    var wrap = {
+      'main': { data_obj: {}, mustache_obj: {}, ary: {} },
+      'head': { data_obj: {}, mustache_obj: {}, ary: {} },
+      'foot': { data_obj: {}, mustache_obj: {}, ary: {} }
+    }
+    window.UMAMI.init(['main', 'head', 'foot'], 'sp')
+
+  </script>
+
+
+</body></html>
